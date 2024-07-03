@@ -5,16 +5,16 @@ import Suggestions from "../Sub/Suggestions";
 
 function App() {
   return (
-    <div className="App">
-      <div style={{ minHeight: '100vh', width: '1440px' }}>
-        <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
+      <div className="App">
+        <div style={{ minHeight: '100vh', width: '1440px' }}>
           <Routes>
             <Route path="/" element={<Landingpage />} />
             <Route path="/suggest" element={<Suggestions />} />
           </Routes>
-        </Router>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
