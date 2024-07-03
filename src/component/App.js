@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div style={{ minHeight: '100vh', width: '1440px' }}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path="/" element={<Landingpage />} />
             <Route path="/suggest" element={<Suggestions />} />
