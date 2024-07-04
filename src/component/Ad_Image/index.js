@@ -1,0 +1,12 @@
+export { default as america } from './america.jpg';
+export { default as france } from './france.jpg';
+export { default as greece } from './greece.jpg';
+export { default as japan1 } from './japan1.jpg';
+export { default as jeju } from './jeju.jpg';
+export { default as singapol } from './singapol.jpg';
+export { default as switzerland } from './Switzerland.jpg';
+export { default as venezia } from './venezia.jpg';
+export { default as england } from './england.jpg';
+export { default as india } from './india.jpg';
+export { default as mongol } from './mongol.jpg';
+export { default as german } from './german.jpg';

@@ -1,5 +1,7 @@
 import { Layout, List, Menu, Typography } from 'antd';
 import React from 'react';
+import Adver from './Adver';
+
 
 const { Content, Footer, Sider } = Layout;
 const data = [
@@ -25,7 +27,8 @@ const items = ['서울', '경기', '충청', '강원', '경상', '전라', '제�
     }),
   };
 });
-const App = () => {
+
+const Contents = () => {
   return (
     <Layout>
       <Content
@@ -61,13 +64,16 @@ const App = () => {
               minHeight: 280,
             }}
           >
+            <div style={{ marginBottom: '25px' }}>
+              <Adver />
+            </div>
             <List
-              header={<div style={{fontSize: '25px', textAlign: 'center'}}>공지 사항 게시판</div>}
+              header={<div style={{ fontSize: '25px', textAlign: 'center' }}>공지 사항 게시판</div>}
               bordered
-              style={{border:'black solid 3px'}}
+              style={{ border: 'black solid 3px' }}
               dataSource={data}
-              renderItem={(item,index) => (
-                <List.Item style={{borderBottom: index === data.length - 1 ? 'none' : '2px solid black',}}>
+              renderItem={(item, index) => (
+                <List.Item style={{ borderBottom: index === data.length - 1 ? 'none' : '2px solid black', }}>
                   <Typography.Text>[긴급]</Typography.Text> {item}
                 </List.Item>
               )}
@@ -75,11 +81,9 @@ const App = () => {
           </Content>
         </Layout>
       </Content>
-      <Footer
-      
-      >
+      <Footer>
       </Footer>
     </Layout>
   );
 };
-export default App;
+export default Contents;
