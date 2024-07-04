@@ -1,18 +1,30 @@
 {
   "files": {
     "main.css": "/bath_friends/static/css/main.e6c13ad2.css",
-    "main.js": "/bath_friends/static/js/main.213c9ebc.js",
+    "main.js": "/bath_friends/static/js/main.44fb30e4.js",
     "static/js/453.f251f995.chunk.js": "/bath_friends/static/js/453.f251f995.chunk.js",
     "static/media/outbath.jpg": "/bath_friends/static/media/outbath.fc8408ab89af84c2b60e.jpg",
+    "static/media/Switzerland.jpg": "/bath_friends/static/media/Switzerland.8f6c7bd6e5bb87f93b62.jpg",
+    "static/media/venezia.jpg": "/bath_friends/static/media/venezia.2cea09a20ed9dd1bc9cf.jpg",
+    "static/media/japan1.jpg": "/bath_friends/static/media/japan1.0ff2c6ba2faf2635c280.jpg",
+    "static/media/german.jpg": "/bath_friends/static/media/german.ba82625ff6cd2faa51d7.jpg",
+    "static/media/jeju.jpg": "/bath_friends/static/media/jeju.37deb4d403eec351db02.jpg",
+    "static/media/singapol.jpg": "/bath_friends/static/media/singapol.3b3563956a6908928f7d.jpg",
     "static/media/bamboo_forest.jpg": "/bath_friends/static/media/bamboo_forest.bc08223889d0eaf17bae.jpg",
+    "static/media/england.jpg": "/bath_friends/static/media/england.aa4a7c1a82f3537e0d70.jpg",
+    "static/media/greece.jpg": "/bath_friends/static/media/greece.a85c5c673ca152d91615.jpg",
+    "static/media/france.jpg": "/bath_friends/static/media/france.381417dfc3b90fdaca9d.jpg",
+    "static/media/mongol.jpg": "/bath_friends/static/media/mongol.e9c3ef3f4331af060614.jpg",
+    "static/media/america.jpg": "/bath_friends/static/media/america.f89ab8b738e072994a2b.jpg",
+    "static/media/india.jpg": "/bath_friends/static/media/india.9a6aef277dbde1c33b87.jpg",
     "static/media/logo_name.png": "/bath_friends/static/media/logo_name.6743a4709ee385bbb6ed.png",
     "index.html": "/bath_friends/index.html",
     "main.e6c13ad2.css.map": "/bath_friends/static/css/main.e6c13ad2.css.map",
-    "main.213c9ebc.js.map": "/bath_friends/static/js/main.213c9ebc.js.map",
+    "main.44fb30e4.js.map": "/bath_friends/static/js/main.44fb30e4.js.map",
     "453.f251f995.chunk.js.map": "/bath_friends/static/js/453.f251f995.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.213c9ebc.js"
+    "static/js/main.44fb30e4.js"
   ]
 }
