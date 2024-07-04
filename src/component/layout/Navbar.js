@@ -1,25 +1,17 @@
-import React from 'react';
 import { Layout, Menu } from 'antd';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const {Header} = Layout;
+const { Header } = Layout;
 
-const menus = ['리뷰 게시판','건의 게시판','이용권 구매','검색','공지 사항'].map((key)=>({
+const menus = [
 
-  key,
-  label: `${key}`,
-  
-  key,
-  label: `${key}`,
-  
-  key,
-  label: `${key}`,
-  
-  key,
-  label: `${key}`,
-  
-  key,
-  label: `${key}`
-}))
+  { key: '리뷰 게시판', label: '리뷰 게시판' },
+  { key: '건의 게시판', label: <Link to='/suggest'>건의 게시판</Link> },
+  { key: '이용권 구매', label: '이용권 구매' },
+  { key: '검색', label: '검색' },
+  { key: '공지 사항', label: '공지 사항' }
+];
 
 const NavBar = () => {
   return (
@@ -30,7 +22,7 @@ const NavBar = () => {
           justifyContent: 'center',
         }}
       >
-        <div/>
+        <div />
         <Menu
           theme="dark"
           mode="horizontal"

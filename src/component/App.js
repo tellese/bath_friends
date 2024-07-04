@@ -2,7 +2,6 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Landingpage from "./Landingpage";
 import Suggestions from "../Sub/Suggestions";
 
-
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
