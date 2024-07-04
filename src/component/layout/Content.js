@@ -1,4 +1,4 @@
-import { Layout, List, Menu, Typography } from 'antd';
+import { Divider, Layout, List, Menu, Typography } from 'antd';
 import React from 'react';
 import Adver from './Adver';
 
@@ -64,16 +64,24 @@ const Contents = () => {
               minHeight: 280,
             }}
           >
+            <div style={{ fontWeight: 'bold', fontSize: '30px' }}>
+              여행 상품
+            </div>
+            <Divider style={{ border: '2px solid #' }} />
             <div style={{ marginBottom: '25px' }}>
               <Adver />
             </div>
+            <Divider style={{ border: '2px solid #' }} />
             <List
-              header={<div style={{ fontSize: '25px', textAlign: 'center' }}>공지 사항 게시판</div>}
+              header={<div style={{ fontSize: '25px', textAlign: 'center', fontWeight: 'bold' }}>공지 사항 게시판</div>}
               bordered
               style={{ border: 'black solid 3px' }}
               dataSource={data}
               renderItem={(item, index) => (
-                <List.Item style={{ borderBottom: index === data.length - 1 ? 'none' : '2px solid black', }}>
+                <List.Item style={{
+                  borderBottom: index === data.length - 1 ? 'none' : '2px solid black',
+                  fontWeight: 'bold',
+                }}>
                   <Typography.Text>[긴급]</Typography.Text> {item}
                 </List.Item>
               )}
