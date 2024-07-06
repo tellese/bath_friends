@@ -22,7 +22,6 @@ const NavBar = () => {
           justifyContent: 'center',
         }}
       >
-        <div />
         <Menu
           theme="dark"
           mode="horizontal"

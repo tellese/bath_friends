@@ -67,13 +67,19 @@ const Contents = () => {
             <div style={{ fontWeight: 'bold', fontSize: '30px' }}>
               여행 상품
             </div>
-            <Divider style={{ border: '2px solid #' }} />
+            <Divider style={{ border: '1px solid black' }} />
             <div style={{ marginBottom: '25px' }}>
               <Adver />
             </div>
-            <Divider style={{ border: '2px solid #' }} />
+            <Divider style={{ border: '1px solid black' }} />
             <List
-              header={<div style={{ fontSize: '25px', textAlign: 'center', fontWeight: 'bold' }}>공지 사항 게시판</div>}
+              header={<div style={{
+                fontSize: '25px',
+                textAlign: 'center',
+                fontWeight: 'bold'
+              }}>
+                공지 사항 게시판
+              </div>}
               bordered
               style={{ border: 'black solid 3px' }}
               dataSource={data}
