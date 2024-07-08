@@ -25,7 +25,6 @@ function Contents() {
           alignItems: 'center',
           justifyContent: 'center'
         }}>
-          <img src={logo} style={{ height: '85px' }} />
           <Menu theme="dark" mode="inline" items={items}
             style={{
               backgroundColor: '#347691',

@@ -9,9 +9,9 @@ function MainImage() {
     <div>
       <span style={{
         display: 'inline-flex',
-        padding: '0 35px'
+        padding: '0 35px',
       }}>
-        <img src={logo_name} alt='메인 로고 이미지' style={{ height: '75px', marginTop: '10px', paddingRight: '25px' }} />
+        <img src={logo_name} alt='메인 로고 이미지' style={{ height: '80px', paddingRight: '25px' }} />
       </span>
       <span style={{
         display: 'flex',
@@ -19,7 +19,7 @@ function MainImage() {
         justifyContent: 'center',
         width: '100%'
       }}>
-        <Searching style={{ width: '50%' }} />
+        <Searching style={{ width: '50%', marginTop: '-50px' }}/>
       </span>
       <div style={{
         backgroundImage: `url(${bamboo_forest})`,

@@ -6,7 +6,7 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
-        <div style={{ minHeight: '100vh', width: '1440px' }}>
+        <div style={{ minHeight: '100vh', width:'1440px', margin: '0 auto' }}>
           <Routes>
             <Route path="/" element={<Landingpage />} />
             <Route path="/suggest" element={<Suggestions />} />
