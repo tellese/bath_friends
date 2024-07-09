@@ -1,42 +1,51 @@
 import { Divider, Layout, List, Menu } from 'antd';
 import React from 'react';
-import logo from '../Image/logo_name.png'
 
 const { Header, Content, Sider } = Layout;
 
 const data = [
-  'Racing car sprays burning fuel into crowd.',
-  'Japanese princess to wed commoner.',
-  'Australian walks 100km after outback crash.',
-  'Man charged over missing wedding girl.',
-  'Los Angeles battles huge wildfires.',
+  '코로나때 닫혔던 찜질방을 다시 열어주세요',
+  '청소시간을 조금 줄여줬으면 좋겠어요',
+  '아침에 목욕탕에 들어가면 이상한게 보입니다',
+  '남탕쪽 매점에 먹거리가 부족해 보입니다.',
+  '여자는 수건을 더 줬으면 좋겠어요.',
 ];
 
-const items = ['1', '2', '3', '4', '5'].map((index) => ({
+const data2 = [
+  '매점에 파는 음식이 다양했으면 좋겠어요!',
+  '탕이 너무 뜨겁거나 너무 차가워요',
+  '세신사 분들이 너무 불친절 합니다',
+  '어린아이 통제가 제대로 안돼요.',
+  '찜질방에 코고는 사람에 대한 대책이 필요합니다.',
+]
+
+const items = ['서울', '경기', '충청', '강원', '경상', '전라', '제주'].map((index) => ({
   key: String(index),
-  label: `nav ${index}`,
+  label: `${index} 지역 건의`,
 }));
 
 function Contents() {
   return (
     <Layout>
-      <Sider>
+      <Sider style={{ backgroundColor: '#65B7ED', borderRadius: '10px' }}>
         <div style={{
           alignItems: 'center',
-          justifyContent: 'center'
+          justifyContent: 'center',
         }}>
           <Menu theme="dark" mode="inline" items={items}
             style={{
-              backgroundColor: '#347691',
+              backgroundColor: '#018294',
+              borderRadius: '9px'
             }} />
         </div>
       </Sider>
       <Layout>
         <Header
           style={{
-            backgroundColor: '#55779B',
+            backgroundColor: '#8DC7ED',
             height: '350px',
-            margin: '10px 20px'
+            margin: '10px 20px',
+            borderRadius: '10px'
           }}
         >
           <div>
@@ -72,8 +81,8 @@ function Contents() {
             style={{
               padding: 24,
               minHeight: 360,
-              background: '#DCDCC9',
-              borderRadius: '3px',
+              background: '#B2EAED',
+              borderRadius: '10px',
             }}
           >
             <Divider orientation="left"
@@ -85,7 +94,7 @@ function Contents() {
             <List
               size="large"
               bordered
-              dataSource={data}
+              dataSource={data2}
               style={{
                 border: '3px solid black'
               }}

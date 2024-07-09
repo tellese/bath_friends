@@ -3,6 +3,7 @@ import bamboo_forest from '../Image/bamboo_forest.jpg';
 import logo_name from '../Image/logo_name.png'
 import Login from '../layout/Login'
 import Searching from '../layout/Searching';
+import { Link } from 'react-router-dom';
 
 function MainImage() {
   return (
@@ -11,7 +12,9 @@ function MainImage() {
         display: 'inline-flex',
         padding: '0 35px',
       }}>
-        <img src={logo_name} alt='메인 로고 이미지' style={{ height: '80px', paddingRight: '25px' }} />
+        <Link to="/">
+          <img src={logo_name} alt='메인 로고 이미지' style={{ height: '80px', paddingRight: '25px' }} />
+        </Link>
       </span>
       <span style={{
         display: 'flex',
@@ -19,7 +22,7 @@ function MainImage() {
         justifyContent: 'center',
         width: '100%'
       }}>
-        <Searching style={{ width: '50%', marginTop: '-50px' }}/>
+        <Searching style={{ width: '50%', marginTop: '-50px' }} />
       </span>
       <div style={{
         backgroundImage: `url(${bamboo_forest})`,

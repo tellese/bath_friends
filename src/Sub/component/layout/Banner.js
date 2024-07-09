@@ -2,11 +2,14 @@ import React from 'react'
 import BannerImage from '../Image/outbath.jpg'
 import logo from '../Image/logo_name.png'
 import Searching from '../../../component/layout/Searching'
+import { Link } from 'react-router-dom'
 
 function Banner() {
   return (
     <div>
-      <img src={logo} alt='홈_로고' style={{ height: '75px', marginTop: '25px' }} />
+      <Link to="/">
+        <img src={logo} alt='홈_로고' style={{ height: '75px', marginTop: '25px' }} />
+      </Link>
       <span style={{
         display: 'flex',
         alignItems: 'center',

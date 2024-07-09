@@ -5,11 +5,11 @@ import Adver from './Adver';
 
 const { Content, Footer, Sider } = Layout;
 const data = [
-  'Racing car sprays burning fuel into crowd.',
-  'Japanese princess to wed commoner.',
-  'Australian walks 100km after outback crash.',
-  'Man charged over missing wedding girl.',
-  'Los Angeles battles huge wildfires.',
+  '<<서울 지역>> : 상수도비 상승으로 인한 입장료 상승 안내',
+  '<<경기 지역>> : 목욕탕 파업 안내',
+  '<<충청 지역>> : 지역 발전을 위한 입장료 할인 이벤트 안내',
+  '<<전라 지역>> : 지역 축제 연계 이벤트 안내',
+  '<<강원 지역>> : 경로 우대 관련 입장료 변경 안내',
 ];
 
 const items = ['서울', '경기', '충청', '강원', '경상', '전라', '제주'].map((key, index) => {
@@ -86,9 +86,9 @@ const Contents = () => {
               renderItem={(item, index) => (
                 <List.Item style={{
                   borderBottom: index === data.length - 1 ? 'none' : '2px solid black',
-                  fontWeight: 'bold',
+                  fontSize: '18px'
                 }}>
-                  <Typography.Text>[긴급]</Typography.Text> {item}
+                  <Typography.Text style={{ fontSize: '20px', fontWeight: 'bold' }}>[긴급]</Typography.Text> {item}
                 </List.Item>
               )}
             />
